@@ -1,5 +1,13 @@
 {
   "country": "us",
   "appFolders": [],
-  "testFolders": []
+  "testFolders": [],
+  "appDependencyProbingPaths": [
+        {
+            "repo": ".",
+            "release_status": "thisBuild",
+            "version": "latest",
+            "projects": "Foundation"
+        }
+    ]
 }
