@@ -10,7 +10,44 @@
   "help": "",
   "url": "",
   "logo": "",
-  "dependencies": [],
+ "dependencies": [
+     {
+     "id": "b50bbdde-c0c6-43ac-aedd-3b083a8b0b71",
+     "name": "Foundation",
+     "publisher": "Kaira",
+     "version": "1.0.0.0"
+    },
+     {
+     "id": "b5e166be-169a-4c12-970c-b99ff72ec348",
+     "name": "CommonBusiness",
+     "publisher": "Kaira",
+     "version": "1.0.0.0"
+    },
+  {
+  "id": "c28f10ef-3f32-4c99-b326-f7881760e982",
+  "name": "DTW",
+  "publisher": "Kaira",
+  "version": "1.0.0.0"
+  },
+  {
+  "id": "41010108-15b2-47ec-a05d-91d93b6c82ff",
+  "name": "MTC",
+  "publisher": "Kaira",
+  "version": "1.0.0.0"
+  },
+  {
+  "id": "c6993762-b411-43d6-9dd9-6b722855743b",
+  "name": "RTR",
+  "publisher": "Kaira",
+  "version": "1.0.0.0"
+  },
+  {
+  "id": "85c0bc5d-fc55-4376-8892-29111aa81ec5",
+  "name": "STP",
+  "publisher": "Kaira",
+  "version": "1.0.0.0"
+  }
+  ],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "22.0.0.0",

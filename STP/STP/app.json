@@ -10,7 +10,20 @@
   "help": "",
   "url": "",
   "logo": "",
-  "dependencies": [],
+ "dependencies": [
+     {
+     "id": "b50bbdde-c0c6-43ac-aedd-3b083a8b0b71",
+     "name": "Foundation",
+     "publisher": "Kaira",
+     "version": "1.0.0.0"
+    },
+     {
+     "id": "b5e166be-169a-4c12-970c-b99ff72ec348",
+     "name": "CommonBusiness",
+     "publisher": "Kaira",
+     "version": "1.0.0.0"
+    }
+  ],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "22.0.0.0",
