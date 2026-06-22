@@ -1,4 +1,4 @@
-permissionset 57000 GP_STP
+permissionset 57160 GP_STP
 {
     Assignable = true;
     Permissions = tabledata STPTable1 = RIMD,
