@@ -16,6 +16,10 @@ table 57011 FndTable2
         {
             DataClassification = ToBeClassified;
         }
+        field(4; Check; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys
