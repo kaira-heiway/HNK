@@ -1,19 +1,20 @@
 {
+  "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go-Actions/v9.0/.Modules/settings.schema.json",
   "country": "us",
   "appFolders": [],
   "testFolders": [],
-   "appDependencyProbingPaths": [
-        {
-            "repo": ".",
-            "release_status": "thisBuild",
-            "version": "latest",
-            "projects": "Foundation"
-        },
-        {
-            "repo": ".",
-            "release_status": "thisBuild",
-            "version": "latest",
-            "projects": "CommonBusiness"
-        }
-    ]
+  "appDependencyProbingPaths": [
+    {
+      "repo": ".",
+      "release_status": "thisBuild",
+      "version": "latest",
+      "projects": "Foundation"
+    },
+    {
+      "repo": ".",
+      "release_status": "thisBuild",
+      "version": "latest",
+      "projects": "CommonBusiness"
+    }
+  ]
 }
