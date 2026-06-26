@@ -238,19 +238,30 @@ jobs:
           Get-ChildItem '.artifacts' -Directory | ForEach-Object { Write-Host "  $($_.Name)" }
           Write-Host ""
 
-          # Remove folders NOT in the keep list
+          # Remove folders whose NAME does not START WITH any of the keep entries.
+          # Artifact folders are named like: Foundation-main-Apps-1.0.8.0
+          # so we match by prefix (e.g. folder starts with "Foundation").
           Get-ChildItem '.artifacts' -Directory | ForEach-Object {
-            if ($keepFolders -notcontains $_.Name) {
-              Write-Host "REMOVE : $($_.Name)"
+            $folderName = $_.Name
+            $matched = $false
+            foreach ($entry in $keepFolders) {
+              if ($folderName -like "$entry-*" -or $folderName -eq $entry) {
+                $matched = $true
+                break
+              }
+            }
+            if (-not $matched) {
+              Write-Host "REMOVE : $folderName"
               Remove-Item $_.FullName -Recurse -Force
             } else {
-              Write-Host "KEEP   : $($_.Name)"
+              Write-Host "KEEP   : $folderName"
             }
           }
 
           Write-Host ""
           Write-Host "=== Artifacts remaining after filter ==="
-          $remaining = Get-ChildItem '.artifacts' -Directory
+          # Wrap in @() to force array — avoids .Count crash on single result under StrictMode
+          $remaining = @(Get-ChildItem '.artifacts' -Directory)
           if ($remaining.Count -eq 0) {
             Write-Host "##[error] No artifact folders remain after filtering. Verify that the artifact for '$selected' was produced by the build."
             exit 1
