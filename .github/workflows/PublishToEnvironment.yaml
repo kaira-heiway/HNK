@@ -1,4 +1,4 @@
-name: ' Publish To Environment'
+name: 'Heilite Extension Suite Deployment'
 
 on:
   workflow_dispatch:

@@ -1,4 +1,4 @@
-name: 'Trigger Heilite Deployment'
+name: 'Heilite Deploy Selected Extension'
 
 on:
   workflow_dispatch:
